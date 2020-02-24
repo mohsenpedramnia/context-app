@@ -1,4 +1,5 @@
 import React, { Component, createContext } from "react";
+
 export const AuthContext = createContext();
 
 class AuthContextProvider extends Component {
@@ -6,7 +7,7 @@ class AuthContextProvider extends Component {
     isAuthenticated: false
   };
   toggleAuth = () => {
-    this.setState({ isAuthenticated: !this.state.isAunthenticated });
+    this.setState({ isAuthenticated: !this.state.isAuthenticated });
   };
   render() {
     return (
